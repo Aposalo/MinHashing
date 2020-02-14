@@ -60,7 +60,7 @@ def MinHashing(namefile,n):
                     sumJA = sumJA + 1
             for i in range(n):#Jaccard Similarity S
                 if(S[i][j] == S[i][j + l]):
-                    if(S[i][j]!=-1.0):
+                    if(S[i][j] != -1.0):
                         JS = JS + 1
             JA = JA / sumJA
             print("Jaccard Similarity A : sim({},{}) = {}".format(j, j + l, JA))
